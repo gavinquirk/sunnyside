@@ -1,5 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 import { Container } from './components/styles/Container.styled';
+import GlobalStyles from './components/styles/Global';
 
 const theme = {
   colors: {
@@ -24,6 +25,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <>
+        <GlobalStyles />
         <Container>
           <h1>We Are Creatives</h1>
         </Container>
